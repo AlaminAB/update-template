@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Evolve</title>
+    <link rel="icon" href="images/evolve.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- header top start-->
+        <div class="header-top">
+            <div class="container d-flex justify-content-between">
+                <!-- header top left -->
+                <div class="top-left-side">
+                    <ul>
+                        <li> <i class="fa fa-phone-alt"></i> 1234 - 5678 - 9088 </li>
+                        <li><i class="far fa-envelope"></i>support@evolvestudio.com</li>
+                    </ul>
+                </div>
+                <!-- header top right -->
+                <div class="top-right-side">
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href=""><i class="fas fa-basketball-ball"></i></a></li>
+                        <li><a href=""><i class="fab fa-flickr"></i></a></li>
+                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fas fa-rss-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- header top end -->
+
+        <!-- navbar section  start-->
+        <nav class="main-nav">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- for mobile menu  -->
+                <form action="" id="nav-form">
+                    <input type="text" class="search-input" placeholder="Type here">
+                    <i class="fas fa-times"></i>
+                </form>
+                <i class="fas fa-bars"></i>
+                <div class="mobile-search"><i class="fa fa-search "></i> </div>
+                <!-- for mobile menu end -->
+                <div class="logo">
+                    <a href=""><img src="assets/img/logo.png" alt="Evolve"></a>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li>
+                            <a href="" class="link-active">HOME</a>
+                        </li>
+                        <li>
+                            <a href="">PAGES</a>
+                        </li>
+                        <li>
+                            <a href="">FEATURES</a>
+                        </li>
+                        <li>
+                            <a href="">PORTFOLIO</a>
+                        </li>
+                        <li>
+                            <a href="">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="">CONTACT</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar section  end-->
+    </header>
+
+    <!-- banner section start  -->
+    <section class="banner-section">
+        <div class="banner-section-img">
+            <img src="assets/img/bg-slider.jpg" alt="slider">
+            <div class="hero-text">
+                <span>Lorem ipsum dolor sit.</span>
+                <h1>Lorem ipsum dolor </h1>
+                <a href="" class="hero-btn">Shop now</a>
+            </div>
+        </div>
+        <div class="banner-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h2>The fastest way to grow your business with the leader in Technology.</h2>
+                        <p>Check out our options and features included.</p>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <a href="" class="banner-btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner section end  -->
+
+    <!-- service section start  -->
+    <section class="service-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- single service box start -->
+                    <div class="service-box">
+                        <div class="icon">
+                            <i class="fa fa-layer-group"></i>
+                        </div>
+                        <div class="service-box-content">
+                            <h2>Super Design</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <a href="" class="service-btn">Read More</a>
+                        </div>
+                    </div>
+                    <!-- single service box end -->
+                </div>
+                <div class="col-md-4">
+                    <!-- single service box start -->
+                    <div class="service-box">
+                        <div class="icon">
+                            <i class="fa fa-layer-group"></i>
+                        </div>
+                        <div class="service-box-content">
+                            <h2>Super Design</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <a href="" class="service-btn">Read More</a>
+                        </div>
+                    </div>
+                    <!-- single service box end -->
+                </div>
+                <div class="col-md-4">
+                    <!-- single service box start -->
+                    <div class="service-box">
+                        <div class="icon">
+                            <i class="fa fa-layer-group"></i>
+                        </div>
+                        <div class="service-box-content">
+                            <h2>Super Design</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <a href="" class="service-btn">Read More</a>
+                        </div>
+                    </div>
+                    <!-- single service box end -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service section end  -->
+
+
+    <script>
+        // for menu 
+        let menu = document.querySelector(".fa-bars");
+        let navbar = document.querySelector(".navbar");
+        let logo = document.querySelector(".logo");
+        let bar = document.querySelectorAll(".fa-search");
+        let bars = document.querySelector(".fa-search");
+        let toggle = true;
+        menu.addEventListener("click", function() {
+            if (toggle) {
+                navbar.style.left = 0;
+                menu.style.left = 190 + "px";
+                if (window.innerWidth < 500) {
+                    logo.style.left = 100 + "%";
+                } else {
+                    logo.style.left = 60 + "%";
+                }
+                bars.style.display = "none"
+                toggle = false;
+            } else {
+                navbar.style.left = "-200px";
+                menu.style.left = 15 + "px";
+                logo.style.left = 50 + "%";
+                toggle = true;
+                bars.style.display = "block"
+            }
+        });
+
+        // search bar 
+        let form = document.querySelector("#nav-form");
+        let cross = document.querySelector(".fa-times");
+        let Toggle = true;
+        for (let i = 0; i < bar.length; i++) {
+            bar[i].addEventListener("click", function() {
+                if (Toggle) {
+                    form.style.display = "block";
+                    cross.style.display = "block"
+                    Toggle = true;
+                } else {
+                    form.style.display = "none";
+                    Toggle = false;
+                }
+            })
+        }
+        cross.addEventListener("click", function() {
+            cross.style.display = 'none';
+            form.style.display = "none"
+        })
+    </script>
+</body>
+
+</html>
